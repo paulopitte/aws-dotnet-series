@@ -1,0 +1,6 @@
+@AmazonS3_HostAddress = http://localhost:5000
+
+GET {{AmazonS3_HostAddress}}/weatherforecast/
+Accept: application/json
+
+###
