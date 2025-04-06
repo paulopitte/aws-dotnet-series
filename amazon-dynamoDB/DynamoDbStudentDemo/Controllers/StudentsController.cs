@@ -10,10 +10,7 @@ public class StudentsController : ControllerBase
 {
     private readonly IDynamoDBContext _context;
 
-    public StudentsController(IDynamoDBContext context)
-    {
-        _context = context;
-    }
+    public StudentsController(IDynamoDBContext context) => _context = context;
 
     [HttpGet("{studentId}")]
     public async Task<IActionResult> GetById(int studentId)
