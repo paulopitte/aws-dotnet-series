@@ -4,17 +4,20 @@
     <TargetFramework>net8.0</TargetFramework>
     <Nullable>enable</Nullable>
     <ImplicitUsings>enable</ImplicitUsings>
-    <UserSecretsId>67bdb786-f0bd-4f55-82d4-0a256ce3c88f</UserSecretsId>
+    <UserSecretsId>a7233b4f-d4ec-4e66-914a-755a015103d2</UserSecretsId>
     <DockerDefaultTargetOS>Linux</DockerDefaultTargetOS>
-    <DockerfileContext>..\..</DockerfileContext>
+    <DockerfileContext>.</DockerfileContext>
+    <!--<UserSecretsId>67bdb786-f0bd-4f55-82d4-0a256ce3c88f</UserSecretsId>
+    <DockerDefaultTargetOS>Linux</DockerDefaultTargetOS>
+    <DockerfileContext>..\..\..</DockerfileContext>-->
   </PropertyGroup>
 
-<PropertyGroup>
+<!--<PropertyGroup>
 	<ContainerImageName>products-crud-api</ContainerImageName>
 	<ContainerImageTags>latest</ContainerImageTags>
 	<PublishProfile>DefaultContainer</PublishProfile>
 	<RuntimeIdentifier>linux-x64</RuntimeIdentifier>
-</PropertyGroup>
+</PropertyGroup>-->
 
   <ItemGroup>
     <PackageReference Include="Microsoft.AspNetCore.OpenApi" Version="8.0.14" />

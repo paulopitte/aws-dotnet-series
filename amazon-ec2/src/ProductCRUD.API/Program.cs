@@ -14,10 +14,9 @@ var app = builder.Build();
 
 using var scope = app.Services.CreateScope();
 var context = scope.ServiceProvider.GetRequiredService<ProductDbContext>();
-if (context.Database.GetPendingMigrations().Any())
-{
-    await context.Database.MigrateAsync();
-}
+//if (true.Equals(context?.Database?.GetPendingMigrations()?.Any() ?? false))
+  //  await context.Database.MigrateAsync();
+
 
 if (app.Environment.IsDevelopment())
 {
